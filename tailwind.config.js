@@ -1,6 +1,9 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
-
+module.exports = {
+    darkMode: 'media',
+    // ...
+  }
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
@@ -14,7 +17,7 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
-        },
+        }
     },
 
     plugins: [forms],
